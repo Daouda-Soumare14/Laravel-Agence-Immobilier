@@ -12,46 +12,26 @@
 
 {{-- ligne 1 --}}
     <div class="row">
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Titre', 'name' => 'title', 'value' => $property->title])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Surface', 'name' => 'surface', 'value' => $property->surface])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Prix', 'name' => 'price', 'value' => $property->price])
-        </div>
+            @include('shared.input', ['class' => 'col', 'label' => 'Titre', 'name' => 'title', 'value' => $property->title])
+            @include('shared.input', ['class' => 'col', 'label' => 'Surface', 'name' => 'surface', 'value' => $property->surface])
+            @include('shared.input', ['class' => 'col', 'label' => 'Prix', 'name' => 'price', 'value' => $property->price])
     </div>
 
 {{-- ligne 2 --}}
-    <div class="row">
-        @include('shared.input', ['type' => 'textarea', 'name' => 'description', 'value' => $property->description])
-    </div>
+        @include('shared.input', ['class' => 'col', 'type' => 'textarea', 'name' => 'description', 'value' => $property->description])
 
 {{-- ligne 3 --}}
     <div class="row">
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Pièces', 'name' => 'rooms', 'value' => $property->rooms])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Chambres', 'name' => 'bedrooms', 'value' => $property->bedrooms])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Etage', 'name' => 'floor', 'value' => $property->floor])
-        </div>
+            @include('shared.input', ['class' => 'col', 'label' => 'Pièces', 'name' => 'rooms', 'value' => $property->rooms])
+            @include('shared.input', ['class' => 'col', 'label' => 'Chambres', 'name' => 'bedrooms', 'value' => $property->bedrooms])
+            @include('shared.input', ['class' => 'col', 'label' => 'Etage', 'name' => 'floor', 'value' => $property->floor])
     </div>
 
 {{-- ligne 4 --}}
     <div class="row">
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Adresse', 'name' => 'address', 'value' => $property->address])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Ville', 'name' => 'city', 'value' => $property->city])
-        </div>
-        <div class="col md-4">
-            @include('shared.input', ['label' => 'Code postale', 'name' => 'postal_code', 'value' => $property->postal_code])
-        </div>
+            @include('shared.input', ['class' => 'col', 'label' => 'Adresse', 'name' => 'address', 'value' => $property->address])
+            @include('shared.input', ['class' => 'col', 'label' => 'Ville', 'name' => 'city', 'value' => $property->city])
+            @include('shared.input', ['class' => 'col', 'label' => 'Code postale', 'name' => 'postal_code', 'value' => $property->postal_code])
 
     </div>
 
